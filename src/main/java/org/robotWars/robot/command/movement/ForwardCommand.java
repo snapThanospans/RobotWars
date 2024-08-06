@@ -7,6 +7,10 @@ import org.robotWars.robot.robots.ARobot;
 public class ForwardCommand extends ACommand {
     @Override
     public JSONObject execute(ARobot robot, String InstructionDetails) {
-        return null;
+        JSONObject response = new JSONObject();
+
+        response.put("status", "OK");
+
+        return response;
     }
 }
